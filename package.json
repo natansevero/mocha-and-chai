@@ -1,0 +1,29 @@
+{
+    "name": "section1-boas-praticas",
+    "version": "1.0.0",
+    "description": "Lib do curso de JS com TDD na prática",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint src/*.js",
+        "test": "mocha tests/**/*.spec.js"
+    },
+    "husky": {
+        "hooks": {
+            "pre-push": "npm run lint"
+        }
+    },
+    "keywords": [
+        "js",
+        "tdd"
+    ],
+    "author": "Natan Severo <natanseverolp@gmail.com> (https://twitter.com/natan_severo)",
+    "license": "MIT",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "eslint": "^5.6.0",
+        "eslint-config-airbnb-base": "^13.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "husky": "^1.0.0-rc.15",
+        "mocha": "^5.2.0"
+    }
+}
