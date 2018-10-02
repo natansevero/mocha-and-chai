@@ -1,0 +1,4 @@
+Funcionamento do Mocha - Describe, Context e It
+    describe => Serve para separar os metodos ou as classes
+    context => Serve para separar os casos de teste
+    it => Para rodar os testes
