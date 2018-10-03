@@ -2,3 +2,21 @@ Funcionamento do Mocha - Describe, Context e It
     describe => Serve para separar os metodos ou as classes
     context => Serve para separar os casos de teste
     it => Para rodar os testes
+
+Comandos skip, only e bail
+    Quando acontecer um erro, queremos que a suite de testes já pare 
+    para podermos corrigir os testes, inves de esperar todos os testes rodarem
+        bail => Quando o primeiro teste quebrar, ele já vai parar 
+            npm test -- --bail
+
+        only => Rodar somente um bloco especifico
+            Colocar o only no código
+                ex.: [describe | context | it].only('bla bla bla', () => {})
+            npm test -- --only
+
+        skip => Para pular um bloco especifico
+            Colocar o skip no código
+                ex.: [describe | context | it].skip('mi mi mi', () => {})
+
+
+
