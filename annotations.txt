@@ -17,6 +17,13 @@ Comandos skip, only e bail
         skip => Para pular um bloco especifico
             Colocar o skip no código
                 ex.: [describe | context | it].skip('mi mi mi', () => {})
+            npm test -- --skip
 
+Hooks do Mocha
+    before => Roda uma vez, antes do bloco
+    after => Roda uma vez, depois do bloco
+    beforeEach => Roda todas as vezes, antes de CADA bloco
+    afterEach => Roda todas as vezes, depois de CADA bloco
 
-
+Métodos do chai
+    should, expect e assert
