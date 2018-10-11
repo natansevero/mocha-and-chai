@@ -30,4 +30,32 @@ describe('Main', () => {
             expect(calc.div).to.be.a('function');
         });
     });
+
+    describe('Sum', () => {
+        it('should return 4 when `sum(2, 2)`', () => {
+            expect(calc.sum(2, 2)).to.be.equal(4);
+        });
+    });
+
+    describe('Sub', () => {
+        it('should return 2 when `sub(4, 2)`', () => {
+            expect(calc.sub(4, 2)).to.be.equal(2);
+        });
+    });
+
+    describe('Div', () => {
+        it('should return 6 when `div(12, 2)`', () => {
+            expect(calc.div(12, 2)).to.be.equal(6);
+        });
+
+        it('should return `Can not to devide any number per zero` when div(2, 0)', () => {
+            expect(calc.div(2, 0)).to.be.equal('Can not to devide any number per zero');
+        });
+    });
+
+    describe('Multi', () => {
+        it('should return 10 when `multi(5, 2)`', () => {
+            expect(calc.mult(5, 2)).to.be.equal(10);
+        });
+    });
 });
