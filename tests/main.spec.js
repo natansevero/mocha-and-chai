@@ -1,7 +1,6 @@
 /* eslint-env mocha */
-
-const { expect } = require('chai');
-const calc = require('../src/main.js');
+import { expect } from 'chai';
+import calc from '../src/main';
 
 describe('Main', () => {
     // smoke test
