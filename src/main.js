@@ -1,6 +1,8 @@
-export default {
-    sum: (num1, num2) => num1 + num2,
-    sub: (num1, num2) => num1 - num2,
-    div: (num1, num2) => ((num2 === 0) ? 'Can not to devide any number per zero' : num1 / num2),
-    mult: (num1, num2) => num1 * num2,
+const FizzBuzz = (num) => {
+    if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
+    if (num % 3 === 0) return 'Fizz';
+    if (num % 5 === 0) return 'Buzz';
+    return num;
 };
+
+export default FizzBuzz;
