@@ -6,11 +6,19 @@
     "scripts": {
         "lint": "eslint src/*.js",
         "test": "mocha tests/**/*.spec.js --require babel-register",
-        "test:tdd": "mocha tests/**/*.spec.js --require babel-register --watch"
+        "test:tdd": "mocha tests/**/*.spec.js --require babel-register --watch",
+        "test:coverage": "nyc npm test"
+    },
+    "nyc": {
+        "functions": 80,
+        "lines": 80,
+        "check-coverage": true,
+        "reporter": ["text", "html"],
+        "exclude": ["tests/**"]
     },
     "husky": {
         "hooks": {
-            "pre-push": "npm run lint"
+            "pre-push": "npm run lint && npm run test:coverage"
         }
     },
     "keywords": [
@@ -28,6 +36,7 @@
         "eslint-plugin-chai-friendly": "^0.4.1",
         "eslint-plugin-import": "^2.14.0",
         "husky": "^1.0.0-rc.15",
-        "mocha": "^5.2.0"
+        "mocha": "^5.2.0",
+        "nyc": "^13.0.1"
     }
 }
