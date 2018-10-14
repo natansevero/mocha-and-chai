@@ -6,7 +6,8 @@ const FizzBuzz = (num) => {
     return num;
 };
 
-const test = () => 'dasds';
+// Fazendo o coverage quebrar e o husky não deixar dar push
+// const test = () => 'dasds';
 
-export { test };
+// export { test };
 export default FizzBuzz;
